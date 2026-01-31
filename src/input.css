@@ -28,4 +28,11 @@
   .paddingXl {
     @apply py-3 px-2  sm:px-2.5 sm:py-4;
   }
+  .myGradient {
+    background: linear-gradient(90deg, #013223 0%, #006747 50%, #013223 100%);
+  }
+  p {
+    font-size: 14px;
+    opacity: 0.9;
+  }
 }
