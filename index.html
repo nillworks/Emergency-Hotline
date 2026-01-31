@@ -7,7 +7,9 @@
   <!-- LINK GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <!-- LINK FAVICONS ICONS  -->
   <link rel="shortcut icon" href="./assets/icons/search.png" type="image/x-icon">
   <!-- LINK OUTPUT CSS -->
@@ -23,15 +25,45 @@
 
 
     <nav>
-      <div class="containerS">
+      <div class="containerS paddingXl flex items-center justify-between">
 
         <!-- Logo -->
-        <div>
-          <img src="" alt="img">
-          <h2>logo</h2>
+        <div class="flex items-center gap-1">
+          <img src="assets/logo.png" alt="img" class="w-10">
+          <h2 class="text-lg font-extrabold text-srcColor leading-none">Emergency <br> Service</h2>
         </div>
-        <!-- Navigation Menu -->
-        <!-- Btn  -->
+
+        <!-- 3 buttons on navigation menu -->
+        <div class=" items-center gap-2 hidden sm:flex">
+
+          <!-- 1 -->
+          <div class="flex gap-2 items-center bg-bgPrimary/10 py-2 px-6 rounded-full">
+            <span class="text-lg font-bold ">0</span>
+            <img src="./assets/heart.png" alt="icon" class="w-8 h-auto">
+          </div>
+
+          <!-- 2 -->
+          <div class="flex gap-2 items-center bg-bgPrimary/10 py-2 px-6 rounded-full">
+            <span class="text-lg font-bold">0</span>
+            <img src="./assets/coin.png" alt="icon" class="w-8 h-auto">
+          </div>
+
+          <!-- 3 -->
+          <div class="flex gap-2 items-center bg-primaryColor py-2 px-6 rounded-full">
+            <span class="text-lg font-bold text-white">2</span>
+            <span class="text-lg font-bold  text-white">Copy</span>
+          </div>
+
+        </div>
+
+        <!-- Mobile bars Btn  -->
+        <div class="sm:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+
+        </div>
 
       </div>
     </nav>

@@ -2,22 +2,30 @@
 
 @theme {
   /* Primary Colors  */
-  --color-primaryColor: #12253e;
-  --color-primaryLight: #183354;
-  --color-srcColor: #f4796c;
+  --color-primaryColor: #00a63e;
+  --color-primaryLight: ;
+  --color-srcColor: #006747;
 
   /* Text Color  */
   --color-textPrimaryColor: white;
-  --color-headingColor: #183354;
+  --color-headingColor: ;
   ---color-paragraphColor: ;
 
-  /* Dark Color */
-  --color-dark1Color: ;
-  --color-dark2Color: ;
-  --color-dark3Color: ;
-  --color-dark4Color: ;
-  --color-dark5Color: ;
+  /* Bg color */
+  --color-bgPrimary: #41ff6b;
 
-  /* Shadow  */
-  --color-shadowSm: ;
+  /* Font Primary */
+  --font-FontPrimary: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  body {
+    @apply font-FontPrimary;
+  }
+  .containerS {
+    @apply max-w-[1360px] mx-auto;
+  }
+  .paddingXl {
+    @apply py-3 px-2  sm:px-2.5 sm:py-4;
+  }
 }
